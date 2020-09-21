@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <?php 
 include_once ('config.php');
 // $action = isset($_POST['action']) ? $_POST['action'] : '';
@@ -37,8 +31,6 @@ if (!$connection) {
             header('Location: index.php');
         }else if('delete'==$action){
             $taskid = $_POST['taskid'];
-            echo "DELETING {$taskid}";
-            die();
             if ($taskid) {
                 $query = "DELETE FROM tasks WHERE id={$taskid} LIMIT 1";
                 mysqli_query($connection,$query);

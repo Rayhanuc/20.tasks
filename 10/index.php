@@ -127,7 +127,7 @@ $resultCompleteTasks = mysqli_query($connection, $completeTasksQuery);
                                 <td><?php echo $data['id'] ; ?></td>
                                 <td><?php echo $data['task'] ; ?></td>
                                 <td><?php echo $date ; ?></td>
-                                <td><a class="delete" data-taskid="<?php echo $cdata['id'] ; ?>" href="#">Delete</a> | <a class="complete" data-taskid="<?php echo $data['id'] ; ?>" href="#">Complete</a></td>
+                                <td><a class="delete" data-taskid="<?php echo $data['id'] ; ?>" href="#">Delete</a> | <a class="complete" data-taskid="<?php echo $data['id'] ; ?>" href="#">Complete</a></td>
                             </tr>
 
                             <?php
